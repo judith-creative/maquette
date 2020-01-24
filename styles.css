@@ -1,0 +1,307 @@
+/*polices personnalisées max 3*/
+@font-face {
+    font-family: 'robotobold';
+    src: url('Roboto-Bold-webfont.eot');
+    src: url('Roboto-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Bold-webfont.woff2') format('woff2'),
+         url('Roboto-Bold-webfont.woff') format('woff'),
+         url('Roboto-Bold-webfont.ttf') format('truetype'),
+         url('Roboto-Bold-webfont.svg#robotobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotomedium';
+    src: url('Roboto-Medium-webfont.eot');
+    src: url('Roboto-Medium-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Medium-webfont.woff2') format('woff2'),
+         url('Roboto-Medium-webfont.woff') format('woff'),
+         url('Roboto-Medium-webfont.ttf') format('truetype'),
+         url('Roboto-Medium-webfont.svg#robotomedium') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'robotoregular';
+    src: url('Roboto-Regular-webfont.eot');
+    src: url('Roboto-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('Roboto-Regular-webfont.woff2') format('woff2'),
+         url('Roboto-Regular-webfont.woff') format('woff'),
+         url('Roboto-Regular-webfont.ttf') format('truetype'),
+         url('Roboto-Regular-webfont.svg#robotoregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*définition des styles principaux de la page (largeur du site, fond, couleur par défaut du texte...)*/
+body {
+    background: rgb(255,255,255);
+    color: #566366;
+    font-family: 'robotoregular', Arial, sans-serif;
+    width: 100%;
+    margin: 0;
+}
+
+h1, h2, h3, ul li, .bouton a {
+    font-family: 'robotobold', Arial, sans-serif;
+}
+
+footer, header {
+    background-color: #191f21;
+}
+
+.bouton a {
+    text-decoration: none;
+    color: #2ca260;
+    border: 1px #2ca260 solid;
+    padding: 10px 36px;
+}
+
+.une_colonne, #references, .apropos, .barre_grise {
+    background-color: #f2f2f1;
+}
+
+/*element header*/
+header {
+    height: 500px;
+    color: white;
+    text-align: center;
+    display: flex;
+}
+
+header h1 {
+    border-top: 2px solid white;
+    border-bottom: 2px solid white;
+    text-transform: uppercase;
+    padding: 5px;
+}
+
+.logo {
+    border: none;
+}
+
+#nom {
+    color: #2ca260;
+}
+
+/*nav*/
+nav {
+    background-color: #252e30;
+    text-align: right;
+    min-height: 70px;
+    line-height: 70px;
+}
+
+.menu {
+    margin: 0 30px 0 0;
+    text-align: center;
+    width: 100%;
+    display: none;
+    background-color: #252e30;
+}
+
+.menu a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #2ca260;
+    line-height: 70px;
+    display: block;
+    margin: 0;
+    width: 100%;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: block;
+    text-align: right;
+    cursor: pointer;
+    width: 34px;
+}
+
+#toggle {
+    display: none;
+}
+
+#toggle:checked + .menu {
+    display: block;
+    background: #252e30;
+}
+
+.menu a:active {
+    background-color: #2ca260;
+}
+
+/*element trois colonnes valeurs, objectifs, loisirs*/
+
+/*element à propos*/
+h4, h3 {
+    margin: 2px 0;
+}
+
+.apropos img {
+    display: none;
+}
+
+/*element mes compétences*/
+.barre_grise {
+    height: 30px;
+}
+
+#barre_verte_70, #barre_verte_65, #barre_verte_80, #barre_verte_75 {
+    background-color: #2ecc71;
+    height: 100%;
+}
+
+    #barre_verte_70 {
+        width: 70%;
+    }
+
+    #barre_verte_65 {
+        width: 65%;
+    }
+
+    #barre_verte_80 {
+        width: 80%;
+    }   
+
+    #barre_verte_75 {
+        width: 75%;
+    }
+
+/*element cv*/
+.cv, #references {
+    margin-top: 100px;
+    height: 210px;
+    text-align: center;
+    display: flex;
+}
+
+    .centrer {
+        margin: auto;
+    }
+
+.centrer h2+p {
+    display: none;
+}
+
+/*études et formations*/
+.diplomes {
+    margin-top: 68px;
+}
+.education {
+    border-bottom: solid 2px #f2f2f1;
+}
+
+/*expériences profesionnelles*/
+.experiences {
+    margin-top: 68px;
+}
+
+/*element références*/
+
+/*element portfolio*/
+.fixed-size-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.fixed-size {
+    border: 2px black solid;
+    margin:10px 0;
+    width: 300px;
+    height: 300px;
+}
+
+/*element contact*/
+.contact {
+    color: white;
+    background: #252e30;
+}
+
+.contact .colonne_une p {
+    color:  #4b5456;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input {
+    flex: 1;
+    background-color: #4b5456;
+  }
+
+.colonne_une, .colonne_deux, .colonne_trois {
+    padding: 0 10px;
+}
+
+/*element footer*/
+footer {
+    height: 85px;
+    display: flex;
+}
+
+footer p {
+    margin: auto;
+    text-align: center;
+}
+
+/*Media Queries*/
+@media screen and (min-width: 768px) {
+    .menu {
+        display: flex;
+    }
+
+    .menu a {
+    margin: 0 10px;
+    }
+
+    label {
+        display: none;
+    }
+
+    .deux_colonnes, .trois_colonnes {
+        display: flex;
+    }
+
+    .colonne_une, .colonne_deux, .colonne_trois {
+        flex: 1;
+    }
+
+    .parent_theme {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 10px;
+    }
+
+        .theme {
+            display: flex;
+            flex-direction: column;
+        }
+
+    .colonne_une p img {
+     width: 100%;
+    }
+
+    .subcolonne_une {
+        margin-top: 150px;
+    }
+
+    .skills {
+        margin-top: 100px;
+    }
+
+    .centrer h2+p {
+        display: contents;
+    }
+
+}
