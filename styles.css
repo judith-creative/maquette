@@ -177,7 +177,6 @@ h4, h3 {
 /*element cv*/
 .cv, #references {
     margin-top: 100px;
-    height: 210px;
     text-align: center;
     display: flex;
 }
@@ -204,6 +203,13 @@ h4, h3 {
 }
 
 /*element références*/
+#references {
+    padding: 5% 10%;
+}
+
+cite + p {
+    font-weight: bold;
+}
 
 /*element portfolio*/
 .fixed-size-container {
@@ -224,10 +230,28 @@ h4, h3 {
 .contact {
     color: white;
     background: #252e30;
+    height: 100%;
 }
 
 .contact .colonne_une p {
     color:  #4b5456;
+}
+
+.contact .colonne_une p a {
+    text-decoration: none;
+    color: #4b5456;
+}
+
+.contact .colonne_deux {
+    padding-bottom: 20px;
+}
+
+h5 {
+    margin-bottom: 2%;
+}
+
+h5 + p {
+    margin-top: 0;
 }
 
 form {
@@ -240,7 +264,7 @@ form input {
     background-color: #4b5456;
   }
 
-.colonne_une, .colonne_deux, .colonne_trois {
+.colonne_une, .colonne_deux, .colonne_trois, #portfolio {
     padding: 0 10px;
 }
 
@@ -288,7 +312,7 @@ footer p {
             flex-direction: column;
         }
 
-    .colonne_une p img {
+    .apropos .colonne_une p img {
      width: 100%;
     }
 
